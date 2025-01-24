@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Terminal.Gui.Helpers
-{
+namespace Terminal.Gui.Helpers;
 
     public static class ConsoleHelper
     {
@@ -57,5 +56,5 @@ namespace Terminal.Gui.Helpers
             _spinnerActive = false;
         }
     }
-}
+
 

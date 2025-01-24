@@ -14,7 +14,7 @@ public static class InputHelper
             ConsoleHelper.ForegroundColor = ConsoleColor.DarkRed;
             ConsoleHelper.BackgroundColor = ConsoleColor.Green;
             ConsoleHelper.WriteLine (question + " (yes/no):");
-            ConsoleHelper.ResetColor ();
+            System.Console.ResetColor();
 
             string? response = ConsoleHelper.ReadLine ()?.Trim ().ToLower ();
 
