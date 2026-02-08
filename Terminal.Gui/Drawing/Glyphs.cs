@@ -159,8 +159,8 @@ public class GlyphDefinitions
     /// <summary>Box Drawings Vertical Line - Light (U+2502) - │</summary>
     public Rune VLine { get; set; } = (Rune)'│';
 
-    /// <summary>Box Drawings Double Horizontal (U+2550) - ═</summary>
-    public Rune HLineDbl { get; set; } = (Rune)'═';
+    /// <summary>Box Drawings Double Horizontal (U+2550) - =</summary>
+    public Rune HLineDbl { get; set; } = (Rune)'=';
 
     /// <summary>Box Drawings Double Vertical (U+2551) - ║</summary>
     public Rune VLineDbl { get; set; } = (Rune)'║';

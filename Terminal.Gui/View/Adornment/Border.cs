@@ -752,11 +752,11 @@ public class Border : Adornment
 
             if (drawTop)
             {
-                // ╔╡Title╞═════╗
-                // ╔╡╞═════╗
+                // ╔╡Title╞=====╗
+                // ╔╡╞=====╗
                 if (borderBounds.Width < 4 || !Settings.FastHasFlags (BorderSettings.Title) || string.IsNullOrEmpty (Parent?.Title))
                 {
-                    // ╔╡╞╗ should be ╔══╗
+                    // ╔╡╞╗ should be ╔==╗
                     lc?.AddLine (
                                  new (borderBounds.Location.X, titleY),
                                  borderBounds.Width,
@@ -803,7 +803,7 @@ public class Border : Adornment
                                     );
                     }
 
-                    // ╔╡Title╞═════╗
+                    // ╔╡Title╞=====╗
                     // Add a short horiz line for ╔╡
                     lc?.AddLine (
                                  new (borderBounds.Location.X, titleY),
@@ -837,7 +837,7 @@ public class Border : Adornment
                                  Driver?.GetAttribute ()
                                 );
 
-                    // Add the right hand line for ╞═════╗
+                    // Add the right hand line for ╞=====╗
                     lc?.AddLine (
                                  new (
                                       borderBounds.X

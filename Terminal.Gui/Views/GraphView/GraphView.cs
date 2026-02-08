@@ -377,7 +377,7 @@ public class GraphView : View, IDesignable
         // One axis tick/label per
         AxisX.Increment = 0.5f;
         AxisX.ShowLabelsEvery = 2;
-        AxisX.Text = "X →";
+        AxisX.Text = "X ->";
         AxisX.LabelGetter = v => v.Value.ToString ("N2");
 
         AxisY.Increment = 0.2f;

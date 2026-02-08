@@ -840,7 +840,7 @@ public abstract class SpinnerStyle
     public class Arrow : SpinnerStyle
     {
         public override bool HasSpecialCharacters => DEFAULT_SPECIAL;
-        public override string [] Sequence => new [] { "←", "↖", "↑", "↗", "→", "↘", "↓", "↙" };
+        public override string [] Sequence => new [] { "←", "↖", "↑", "↗", "->", "↘", "↓", "↙" };
         public override bool SpinBounce => DEFAULT_BOUNCE;
         public override int SpinDelay => 100;
     }
