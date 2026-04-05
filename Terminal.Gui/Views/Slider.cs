@@ -70,7 +70,7 @@ public class Slider<T> : View, IOrientation
         switch (_config._sliderOrientation)
         {
             case Orientation.Horizontal:
-                Style.SpaceChar = new () { Rune = Glyphs.HLine }; // '─'
+                Style.SpaceChar = new () { Rune = Glyphs.HLine }; // '-'
                 Style.OptionChar = new () { Rune = Glyphs.BlackCircle }; // '┼●🗹□⏹'
 
                 break;
@@ -85,7 +85,7 @@ public class Slider<T> : View, IOrientation
         /*
          │
          │
-         ┼─ 40
+         ┼- 40
          │
          │
         ███ 30
@@ -97,7 +97,7 @@ public class Slider<T> : View, IOrientation
         ███ 10
          │
          │
-        ─●─ 0
+        -●- 0
         */
 
         _config._legendsOrientation = _config._sliderOrientation;
@@ -252,7 +252,7 @@ public class Slider<T> : View, IOrientation
         switch (_config._sliderOrientation)
         {
             case Orientation.Horizontal:
-                Style.SpaceChar = new () { Rune = Glyphs.HLine }; // '─'
+                Style.SpaceChar = new () { Rune = Glyphs.HLine }; // '-'
 
                 break;
             case Orientation.Vertical:
@@ -1198,7 +1198,7 @@ public class Slider<T> : View, IOrientation
                 {
                     // The spacing for the slider use the StartSpacing but...
                     // The spacing for the legends is the StartSpacing MINUS the total chars to the left of the first options.
-                    //    ●────●────●
+                    //    ●----●----●
                     //  Hello Bye World
                     //
                     // chars_left is 2 for Hello => (5 - 1) / 2

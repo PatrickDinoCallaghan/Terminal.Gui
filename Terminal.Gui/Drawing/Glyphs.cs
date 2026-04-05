@@ -153,8 +153,8 @@ public class GlyphDefinitions
 
     #region ----------------- Lines -----------------
 
-    /// <summary>Box Drawings Horizontal Line - Light (U+2500) - ─</summary>
-    public Rune HLine { get; set; } = (Rune)'─';
+    /// <summary>Box Drawings Horizontal Line - Light (U+2500) - -</summary>
+    public Rune HLine { get; set; } = (Rune)'-';
 
     /// <summary>Box Drawings Vertical Line - Light (U+2502) - │</summary>
     public Rune VLine { get; set; } = (Rune)'│';

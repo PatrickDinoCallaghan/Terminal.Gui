@@ -946,9 +946,9 @@ public class TableView : View, IDesignable
         {
             // Render something like:
             /*
-                ┌────────────────────┬──────────┬───────────┬──────────────┬─────────┐
+                ┌--------------------┬----------┬-----------┬--------------┬---------┐
                 │ArithmeticComparator│chi       │Healthboard│Interpretation│Labnumber│
-                └────────────────────┴──────────┴───────────┴──────────────┴─────────┘
+                └--------------------┴----------┴-----------┴--------------┴---------┘
             */
             if (Style.ShowHorizontalHeaderOverline)
             {
@@ -1687,7 +1687,7 @@ public class TableView : View, IDesignable
     private void RenderBottomLine (int row, int availableWidth, ColumnToRender [] columnsToRender)
     {
         // Renders a line at the bottom of the table after all the data like:
-        // └─────────────────────────────────┴──────────┴──────┴──────────┴────────┴────────────────────────────────────────────┘
+        // └---------------------------------┴----------┴------┴----------┴--------┴--------------------------------------------┘
 
         for (var c = 0; c < availableWidth; c++)
         {
@@ -1765,7 +1765,7 @@ public class TableView : View, IDesignable
     private void RenderHeaderOverline (int row, int availableWidth, ColumnToRender [] columnsToRender)
     {
         // Renders a line above table headers (when visible) like:
-        // ┌────────────────────┬──────────┬───────────┬──────────────┬─────────┐
+        // ┌--------------------┬----------┬-----------┬--------------┬---------┐
 
         for (var c = 0; c < availableWidth; c++)
         {
@@ -1837,7 +1837,7 @@ public class TableView : View, IDesignable
          */
 
         // Renders a line below the table headers (when visible) like:
-        // ├──────────┼───────────┼───────────────────┼──────────┼────────┼─────────────┤
+        // ├----------┼-----------┼-------------------┼----------┼--------┼-------------┤
 
         for (var c = 0; c < availableWidth; c++)
         {

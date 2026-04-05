@@ -173,12 +173,12 @@ public class MenuItem
     internal int TitleLength => GetMenuBarItemLength (Title);
 
     // 
-    // ┌─────────────────────────────┐
+    // ┌-----------------------------┐
     // │ Quit  Quit UI Catalog  Ctrl+Q │
-    // └─────────────────────────────┘
-    // ┌─────────────────┐
+    // └-----------------------------┘
+    // ┌-----------------┐
     // │ ◌ TopLevel Alt+T │
-    // └─────────────────┘
+    // └-----------------┘
     // TODO: Replace the `2` literals with named constants
     internal int Width => 1
                           + // space before Title

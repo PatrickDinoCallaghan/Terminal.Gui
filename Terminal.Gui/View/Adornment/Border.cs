@@ -16,28 +16,28 @@ namespace Terminal.Gui;
 ///     <para>
 ///         If <c>1</c>:
 ///         <code>
-/// ┌┤1234├──┐
+/// ┌┤1234├--┐
 /// │        │
-/// └────────┘
+/// └--------┘
 /// </code>
 ///     </para>
 ///     <para>
 ///         If <c>2</c>:
 ///         <code>
-///  ┌────┐
-/// ┌┤1234├──┐
+///  ┌----┐
+/// ┌┤1234├--┐
 /// │        │
-/// └────────┘
+/// └--------┘
 /// </code>
 ///     </para>
 ///     <para>
 ///         If <c>3</c>:
 ///         <code>
-///  ┌────┐
-/// ┌┤1234├──┐
-/// │└────┘  │
+///  ┌----┐
+/// ┌┤1234├--┐
+/// │└----┘  │
 /// │        │
-/// └────────┘
+/// └--------┘
 /// </code>
 ///     </para>
 ///     <para/>
@@ -689,7 +689,7 @@ public class Border : Adornment
                 titleBarsLength = 2;
             }
 
-            // ┌────┐
+            // ┌----┐
             //┌┘View└
             //│
             if (Thickness.Top == 3)
@@ -700,7 +700,7 @@ public class Border : Adornment
                 sideLineLength++;
             }
 
-            // ┌────┐
+            // ┌----┐
             //┌┘View└
             //│
             if (Thickness.Top > 3)
@@ -767,7 +767,7 @@ public class Border : Adornment
                 }
                 else
                 {
-                    // ┌────┐
+                    // ┌----┐
                     //┌┘View└
                     //│
                     if (Thickness.Top == 2)
@@ -781,7 +781,7 @@ public class Border : Adornment
                                     );
                     }
 
-                    // ┌────┐
+                    // ┌----┐
                     //┌┘View└
                     //│
                     if (borderBounds.Width >= 4 && Thickness.Top > 2)
