@@ -552,7 +552,7 @@ public abstract class SpinnerStyle
     public class Line2 : SpinnerStyle
     {
         public override bool HasSpecialCharacters => DEFAULT_SPECIAL;
-        public override string [] Sequence => new [] { "⠂", "-", "–", "—" };
+        public override string [] Sequence => new [] { "⠂", "-", "–", "-" };
         public override bool SpinBounce => true;
         public override int SpinDelay => 100;
     }
